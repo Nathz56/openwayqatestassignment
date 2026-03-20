@@ -22,11 +22,4 @@ public class ChromeOpen {
         driver.get("https://google.com");
 
     }
-
-    @AfterMethod
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit(); 
-        }
-}
 }
