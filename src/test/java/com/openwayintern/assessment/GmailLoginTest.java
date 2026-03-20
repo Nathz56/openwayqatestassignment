@@ -9,7 +9,6 @@ public class GmailLoginTest extends ChromeOpen {
         GmailOpen gmailPage = new GmailOpen(driver);
 
         gmailPage.openGmail();
-
         gmailPage.loginGmail();
 
     }

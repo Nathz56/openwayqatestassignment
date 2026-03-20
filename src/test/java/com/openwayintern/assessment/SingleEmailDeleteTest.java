@@ -13,7 +13,6 @@ public class SingleEmailDeleteTest extends ChromeOpen {
         DeleteMail deleteMail = new DeleteMail(driver);
 
         gmailPage.openGmail();
-
         gmailPage.loginGmail();
 
         checkboxMail.hitCheckboxMail();

@@ -13,7 +13,6 @@ public class MultipleEmailDeleteTest extends ChromeOpen {
         DeleteMail deleteMail = new DeleteMail(driver);
 
         gmailPage.openGmail();
-
         gmailPage.loginGmail();
 
         multipleCheckboxMail.closePopupNotification();
