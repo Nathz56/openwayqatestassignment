@@ -14,6 +14,7 @@ public class CheckboxMail {
     WebDriverWait wait;
 
     By firstEmailCheckbox = By.xpath("(//tr[@role='row' and .//span[@email]]//div[@role='checkbox'])[1]");
+    
 
     public CheckboxMail(WebDriver driver) {
         this.driver = driver;
