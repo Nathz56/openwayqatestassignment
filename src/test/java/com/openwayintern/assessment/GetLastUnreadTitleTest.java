@@ -16,4 +16,9 @@ public class GetLastUnreadTitleTest extends ChromeOpen {
         searchbarType.typeSearchBar();
         searchbarType.getLastUnreadTitle();
     }
+
+    @Test (priority = 2)
+    public void CloseBrowser() {
+            driver.quit(); 
+    }
 }
