@@ -27,7 +27,7 @@ public class SearchbarType {
     public void getLastUnreadTitle() {
         wait.until(driver -> driver.findElement(lastTitle).isDisplayed());
         String lastUnreadTitle = driver.findElement(lastTitle).getText();
-        System.out.println("LAST TITLE IS PRINTED HERE :> " + lastUnreadTitle);
+        System.out.println("LAST TITLE IS PRINTED HERE = " + lastUnreadTitle);
     }
 
 
