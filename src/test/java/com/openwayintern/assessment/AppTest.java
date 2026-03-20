@@ -16,9 +16,6 @@ public class AppTest
 
         driver.get("https://www.google.com");
         
-        driver.get("https://mail.google.com/mail/u/0/#inbox");
-
-        System.out.println("Page title is: " + driver.getTitle());
         
         driver.quit();
     }
