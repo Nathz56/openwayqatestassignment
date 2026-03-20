@@ -15,6 +15,6 @@ public class GetLastUnreadTitleTest extends ChromeOpen {
         searchbarType.typeSearchBar();
 
         String lastUnreadTitle = searchbarType.getLastUnreadTitle();
-        org.testng.Assert.assertEquals(lastUnreadTitle, "Debug your app");
+        org.testng.Assert.assertEquals(lastUnreadTitle, "Debug your app"); //debug your app is one of my last email title
     }
 }
