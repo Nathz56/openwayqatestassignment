@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import io.github.cdimascio.dotenv.Dotenv;
+
 import java.time.Duration;
 
 public class GmailOpen {
@@ -28,6 +30,8 @@ public class GmailOpen {
     }
 
     public void loginGmail() {
+        Dotenv dotenv = Dotenv.configure().ignoreIfMalformed().ignoreIfMissing().load();
+        String password = dotenv.get("APP_PASS");
         
         driver.findElement(emailInput).sendKeys("krakensto2@gmail.com");
         driver.findElement(emailNextButton).click();
@@ -36,7 +40,7 @@ public class GmailOpen {
         wait.until(ExpectedConditions.elementToBeClickable(passField));
         
         passField.clear();
-        passField.sendKeys("123123-OKOK");
+        passField.sendKeys(password);
         driver.findElement(passwordNextButton).click();
     }
 }
