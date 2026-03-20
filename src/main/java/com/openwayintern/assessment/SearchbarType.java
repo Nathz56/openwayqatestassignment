@@ -24,10 +24,11 @@ public class SearchbarType {
         driver.findElement(hitSearchBar).sendKeys(Keys.ENTER);
     }
 
-    public void getLastUnreadTitle() {
+    public String getLastUnreadTitle() {
         wait.until(driver -> driver.findElement(lastTitle).isDisplayed());
         String lastUnreadTitle = driver.findElement(lastTitle).getText();
         System.out.println("LAST TITLE IS PRINTED HERE = " + lastUnreadTitle);
+        return lastUnreadTitle;
     }
 
 
