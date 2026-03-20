@@ -10,7 +10,7 @@ public class SearchbarType {
     WebDriver driver;
     WebDriverWait wait;
 
-    By hitSearchBar = By.xpath("//*[@id=\"gs_lc50\"]/input[1]");
+    By hitSearchBar = By.name("q");
     By lastTitle = By.xpath( "(//tr[@role='row' and .//span[@class='bqe']]//span[@class='bqe'])[last()]");
 
     public SearchbarType(WebDriver driver) {
