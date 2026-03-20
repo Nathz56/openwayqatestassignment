@@ -14,7 +14,6 @@ public class CheckboxMail {
     WebDriverWait wait;
 
     By firstEmailCheckbox = By.xpath("(//tr[@role='row' and .//span[@email]]//div[@role='checkbox'])[1]");
-    By deleteButton = By.xpath("//div[@role = 'button' and @data-tooltip='Delete']");
 
     public CheckboxMail(WebDriver driver) {
         this.driver = driver;
@@ -24,10 +23,5 @@ public class CheckboxMail {
     public void hitCheckboxMail() {
         WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(firstEmailCheckbox));
         checkbox.click();
-    }
-
-    public void deleteCheckboxMail() {
-        WebElement deleteBtn = wait.until(ExpectedConditions.elementToBeClickable(deleteButton));
-        deleteBtn.click();
     }
 }
