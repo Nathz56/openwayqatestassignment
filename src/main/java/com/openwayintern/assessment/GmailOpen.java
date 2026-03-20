@@ -14,7 +14,7 @@ public class GmailOpen {
     WebDriver driver;
     WebDriverWait wait;
 
-    By emailInput = By.name("identifier");
+    By emailInput = By.id("identifierId");
     By emailNextButton = By.id("identifierNext");
 
     By passwordInput = By.xpath("//input[@type='password']");

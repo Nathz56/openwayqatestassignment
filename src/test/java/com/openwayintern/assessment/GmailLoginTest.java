@@ -11,5 +11,6 @@ public class GmailLoginTest extends ChromeOpen {
         gmailPage.openGmail();
 
         gmailPage.loginGmail();
+
     }
 }
