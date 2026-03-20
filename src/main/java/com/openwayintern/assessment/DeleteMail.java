@@ -8,6 +8,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+/**
+ * Reusable component to delete selected email(s) from Gmail inbox.
+ * Works independently of how emails were selected (checkbox, shift-click, etc).
+ */
 public class DeleteMail {
     
     WebDriver driver;
